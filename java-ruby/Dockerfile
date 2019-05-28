@@ -8,12 +8,12 @@ RUN apt-get update \
                        zlib1g-dev \
                        libssl-dev \
  && apt-get clean \
- && wget --no-check-certificate -q https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.2.tar.gz \
- && tar zxvf ruby-2.6.2.tar.gz \
- && cd ruby-2.6.2 \
+ && wget --no-check-certificate -q https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.3.tar.gz \
+ && tar zxvf ruby-2.6.3.tar.gz \
+ && cd ruby-2.6.3 \
  && ./configure \
  && make \
  && make install \
  && cd .. \
- && rm -fr ruby-2.6.2*
+ && rm -fr ruby-2.6.3*
 
